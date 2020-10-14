@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    background: #404558;
+}
+
+.pr-20 {
+    padding-right: 20px;
+}
+
+.onepay {
+    background: linear-gradient(90deg, rgba(250, 67, 69, 1) 0%, rgba(255, 148, 122, 1) 100%);
+}
+
+.onepay-details {
+    background: linear-gradient(90deg, rgba(250, 67, 69, 1) 0%, rgba(255, 148, 122, 1) 100%);
+    position: relative;
+    overflow: hidden;
+    &:before {
+        position: absolute;
+        content: '';
+        width: 250px;
+        height: 250px;
+        background: #ff8b5b;
+        right: -53px;
+        bottom: -81px;
+        border-radius: 50%;
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        width: 150px;
+        height: 150px;
+        background: rgba(255, 118, 0, 0.51);
+        right: -24px;
+        top: -37px;
+        border-radius: 50%;
+    }
+}
+
+.chase {
+    background: linear-gradient(90deg, #924ee5 0%, #514561 100%);
+}
+
+.amerx {
+    background: linear-gradient(90deg, #ffbd09 0%, #ff9c38 100%);
+}
+
+.revo {
+    background: linear-gradient(90deg, #2f6fed 0%, #039efd 100%);
+}
+
+.barl {
+    background: linear-gradient(90deg, #14aee0 0%, #00bef4 100%);
+}
+
+.payment-item {
+    background: #10214c;
+}
+
+.card-lists {
+    list-style: none;
+    padding: 0;
+    li {
+        &:first-of-type {
+            padding: 0;
+        }
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+        margin: 15px 0;
+        &:hover {
+            cursor: pointer;
+        }
+        p {
+            margin: 0;
+            line-height: 1.5;
+        }
+        .card-info {
+            width: 50%;
+            text-align: left;
+            padding-left: 15px;
+            .card-name {
+                font-weight: bold;
+            }
+            .card-type {
+                font-size: 12px;
+            }
+        }
+        .card-balance {
+            width: 50%;
+            text-align: right;
+            padding-right: 15px;
+        }
+    }
+}
+
+.wallet-app {
+    max-width: 500px;
+    margin: auto;
+    background: #0d173d;
+    min-height: 100vh;
+    color: white;
+    padding: 20px 0px 20px 40px;
+    font-family: sans-serif;
+    overflow: hidden;
+    .wallets {
+        .nav {
+            list-style: none;
+            padding: 0;
+            li {
+                display: inline-block;
+                width: 48%;
+                &:last-of-type {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+.wallet-app [data-active="false"] {
+    display: none;
+}

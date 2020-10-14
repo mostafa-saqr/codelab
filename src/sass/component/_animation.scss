@@ -1,0 +1,149 @@
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.slideUp {
+    animation-name: slideUp;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(1200px);
+        opacity: 0.7;
+    }
+    80% {
+        transform: translateY(0px);
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(1200px);
+        opacity: 0.7;
+    }
+    80% {
+        transform: translateX(0px);
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slideOutLeft {
+    animation-name: slideOutLeft;
+}
+
+@keyframes slideOutLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(1200px);
+        opacity: 0.7;
+    }
+}
+
+.slideInRight {
+    animation-name: slideInRight;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(-1200px);
+        opacity: 0.7;
+    }
+    80% {
+        transform: translateX(0px);
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slideOutRight {
+    animation-name: slideOutRight;
+}
+
+@keyframes slideOutRight {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-1200px);
+        opacity: 0.7;
+    }
+}
+
+.slideDown {
+    animation-name: slideDown;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(1200px);
+        opacity: 0.7;
+    }
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.anim-delay-03 {
+    animation-delay: 0.3s;
+}
+
+.anim-delay-05 {
+    animation-delay: 0.5s;
+}
+
+.anim-delay-07 {
+    animation-delay: 0.7s;
+}
+
+.anim-delay-09 {
+    animation-delay: 0.9s;
+}
+
+.anim-delay-11 {
+    animation-delay: 1.1s;
+}

@@ -1,0 +1,119 @@
+.card-details {
+    padding: 20px;
+    border-radius: 15px 0px 0 15px;
+    height: 180px;
+    position: relative;
+    p {
+        margin: 0;
+    }
+    .card-name {
+        font-size: 30px;
+    }
+    .card-type {
+        font-size: 12px;
+    }
+    .card-number {
+        position: absolute;
+        bottom: 15%;
+    }
+}
+
+.close {
+    margin-bottom: -27px;
+    font-size: 30px;
+    opacity: 0;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.total-expenses {
+    list-style: none;
+    padding: 0;
+    li {
+        display: inline-block;
+        width: 47%;
+        color: #596381;
+        &:last-of-type {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: right;
+        }
+    }
+}
+
+hr {
+    border-color: #303a58;
+}
+
+.payment-item {
+    p {
+        width: calc(100%/3);
+    }
+}
+
+.item-indicator {
+    text-align: right;
+}
+
+.item-type {
+    padding: 0 15px;
+    color: #7a839a;
+}
+
+.percentage {
+    position: relative;
+    width: 50px !important;
+    height: 50px;
+    border: 3px solid #3a4d7a;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px !important;
+    color: white !important;
+    &:before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 50px;
+        border: 3px solid;
+        border-radius: 50%;
+        left: -3px;
+        top: -3px;
+    }
+}
+
+.salary {
+    &:before {
+        border-color: #28b6c6 #28b6c6 transparent transparent;
+    }
+    color: #28b6c6
+}
+
+.shopping,
+.personal {
+    color: #d7636c
+}
+
+.shopping {
+    &:before {
+        border-color: transparent #d7636c #d7636c transparent;
+    }
+}
+
+.personal {
+    &:before {
+        border-color: #d7636c transparent transparent transparent;
+    }
+}
+
+.wallet-details {
+    transform: translateY(-245px);
+    .card-lists li {
+        padding: 9px;
+    }
+}
+
+.wallet-info {
+    opacity: 0;
+}
