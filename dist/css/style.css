@@ -192,14 +192,17 @@ body {
   padding: 20px 0px 20px 40px;
   font-family: sans-serif;
   overflow: hidden; }
-  .wallet-app .wallets .nav {
-    list-style: none;
-    padding: 0; }
-    .wallet-app .wallets .nav li {
-      display: inline-block;
-      width: 48%; }
-      .wallet-app .wallets .nav li:last-of-type {
-        text-align: right; }
+  .wallet-app .wallets {
+    position: relative;
+    z-index: 2; }
+    .wallet-app .wallets .nav {
+      list-style: none;
+      padding: 0; }
+      .wallet-app .wallets .nav li {
+        display: inline-block;
+        width: 48%; }
+        .wallet-app .wallets .nav li:last-of-type {
+          text-align: right; }
 
 .wallet-app [data-active="false"] {
   display: none; }

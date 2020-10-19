@@ -104,6 +104,8 @@ body {
     font-family: sans-serif;
     overflow: hidden;
     .wallets {
+        position: relative;
+        z-index: 2;
         .nav {
             list-style: none;
             padding: 0;

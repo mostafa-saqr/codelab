@@ -1,4 +1,4 @@
-$('.card-face').on('click', function(event) {
+$('.card-face').on('click dblclick', function(event) {
 
     var cardId = $(this).data('wallet-face');
     //$(this).addClass('face-flipped');
