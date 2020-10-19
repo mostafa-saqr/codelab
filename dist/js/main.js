@@ -1,11 +1,11 @@
-$('.wallet-vendor').on('click', function(event) {
+$('.card-face').on('click', function(event) {
 
-    var cardId = $(this).attr('id');
+    var cardId = $(this).data('wallet-face');
     //$(this).addClass('face-flipped');
     $(`[data-wallet-face=${cardId}]`).addClass('face-flipped');
     $(`[data-wallet-back=${cardId}]`).addClass('back-flipped');
     $('.close').attr('data-card', cardId)
-    $('.wallet-vendor').not($(this)).addClass('slideDown').removeClass('slideUp')
+    $('.wallet-vendor').not($('#' + cardId)).addClass('slideDown').removeClass('slideUp')
     $('.wallet-info').addClass('slideUp').removeClass('slideDown')
     $('.close').removeClass('slideOutRight').addClass('slideInRight')
     $('.notification').toggleClass('slideInRight slideOutRight')
