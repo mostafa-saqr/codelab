@@ -1,18 +1,23 @@
-$('.card-face').on('click dblclick', function(event) {
+var counter = 0;
+$('.card-face').on('click', function(event) {
 
+    counter++
+    console.log(counter)
     var cardId = $(this).data('wallet-face');
-    //$(this).addClass('face-flipped');
     $(`[data-wallet-face=${cardId}]`).addClass('face-flipped');
     $(`[data-wallet-back=${cardId}]`).addClass('back-flipped');
     $('.close').attr('data-card', cardId)
     $('.wallet-vendor').not($('#' + cardId)).addClass('slideDown').removeClass('slideUp')
     $('.wallet-info').addClass('slideUp').removeClass('slideDown')
-    $('.close').removeClass('slideOutRight').addClass('slideInRight')
-    $('.notification').toggleClass('slideInRight slideOutRight')
-    $('.search').toggleClass('slideInLeft slideOutLeft')
-    $('.title').toggleClass('fadeIn fadeOut')
+    if (counter <= 1) {
+        $('.close').removeClass('slideOutRight').addClass('slideInRight')
+        $('.notification').toggleClass('slideInRight slideOutRight')
+        $('.search').toggleClass('slideInLeft slideOutLeft')
+        $('.title').toggleClass('fadeIn fadeOut')
+    }
 })
 $('.close').click(function() {
+        counter = 0;
         var cardId = $(this).data('card');
         $(`[data-wallet-face=${cardId}]`).removeClass('face-flipped');
         $(`[data-wallet-back=${cardId}]`).removeClass('back-flipped');
